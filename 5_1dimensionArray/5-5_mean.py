@@ -7,3 +7,11 @@
 
 링크 : https://www.acmicpc.net/problem/1546
 """
+N = int(input())
+scores = list(map(int, input().split(' ')))
+highScore = max(scores)
+mean = 0
+for i in range(len(scores)):
+    mean += scores[i]/highScore*100
+mean /= N
+print(mean) 

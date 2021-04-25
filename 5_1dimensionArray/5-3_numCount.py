@@ -5,3 +5,10 @@
 
 링크 : https://www.acmicpc.net/problem/2577
 """
+nCount = 3
+result = 1
+for i in range(nCount):
+    result *= int(input())
+result = str(result)
+for i in range(10):
+    print(result.count(str(i)))

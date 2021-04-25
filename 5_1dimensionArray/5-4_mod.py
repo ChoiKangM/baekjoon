@@ -5,3 +5,10 @@
 
 링크 : https://www.acmicpc.net/problem/3052
 """
+inputNumber = 10
+numbers = []
+for i in range(inputNumber):
+    numbers.append(int(input()) % 42)
+dictionary = {number:numbers.count(number) for number in numbers}
+keys = dictionary.keys()
+print(len(keys))

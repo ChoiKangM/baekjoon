@@ -7,3 +7,18 @@ OX퀴즈의 결과가 주어졌을 때, 점수를 구하는 프로그램을 작�
 
 링크 : https://www.acmicpc.net/problem/8958
 """
+N = int(input())
+result = []
+score = 0
+for i in range(N):
+    result.append(input())
+temp = []
+for i in range(N):
+    temp = result[i].split('X')
+    score = 0
+    # print("temp는 ", temp)
+    for i in range(len(temp)):
+        score += sum(range(len(temp[i])+1))
+        # print(f"temp[{i}]는", temp[i])
+    print(score)
+    
